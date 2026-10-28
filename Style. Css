@@ -1,0 +1,26 @@
+Body {
+    Font-family: Arial;
+    Text-align: center;
+    Background-color: lightblue;
+}
+
+H1 {
+    Color: darkblue;
+}
+
+Input, button {
+    Padding: 10px;
+    Margin: 5px;
+}
+
+Button {
+    Background-color: navy;
+    Color: white;
+    Border: none;
+    Cursor: pointer;
+}
+
+#result {
+    Margin-top: 20px;
+    Font-size: 18px;
+}
