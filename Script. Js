@@ -1,0 +1,23 @@
+const books = [
+    { title: "Java Programming", author: "James", status: "Available" },
+    { title: "Web Development", author: "John", status: "Available" },
+    { title: "Database Systems", author: "Ravi", status: "Issued" }
+];
+
+function searchBook() {
+    let name = document.getElementById("search")
+        .value.toLowerCase();
+
+    let result = books.filter(book =>
+        book.title.toLowerCase().includes(name) ||
+        book.author.toLowerCase().includes(name)
+    );
+
+    document.getElementById("result").innerHTML =
+        result.length
+        ? result.map(book =>
+            `<p>${book.title} - ${book.author}
+            (${book.status})</p>`
+          ).join("")
+        : "No books found";
+}
